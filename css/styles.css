@@ -13,6 +13,9 @@
   --team-background-color: #f5f4fa;
   --portfolio-border-color: #eeeeee;
   --header-border-color: #ececec;
+  --hero-background-color: #c4c4c4;
+  --gradient-color: rgba(47, 48, 58, 0.4);
+  --features-bg-color: #f5f4fa;
 }
 /* Общие стили для двух страниц */
 
@@ -192,8 +195,20 @@ img {
 /* Герой */
 .hero {
   padding: 200px 0;
-  background-color: var(--second-background-color);
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--hero-background-color);
   text-align: center;
+  background-image: linear-gradient(
+      var(--gradient-color),
+      var(--gradient-color)
+    ),
+    url("../images/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   /* outline: 1px solid tomato; */
 }
 
@@ -248,6 +263,28 @@ img {
   margin-top: 30px;
   margin-left: 30px;
 }
+
+/* .features-list > .item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  padding: 25px 100px;
+
+  background-color: var(--features-bg-color);
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.features-list .icon-antenna::before {
+  background-image: url(../images/antenna.png);
+}
+
+.features-list .icon-clock::before {
+  background-image: url(../images/clock.png);
+} */
 
 .features-name {
   margin-bottom: 10px;
