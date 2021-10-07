@@ -148,6 +148,8 @@ img {
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
+  display: flex;
+  align-items: center;
 }
 
 .contact .link:hover,
@@ -425,6 +427,7 @@ img {
 .clients-list .link:focus,
 .clients-list .link:hover {
   border: 1px solid var(--complementary-accent-color);
+  outline: none;
 }
 
 .clients-list .link:focus .clients-icon,
@@ -556,8 +559,13 @@ img {
   background-color: var(--main-background-color);
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  outline: none;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
